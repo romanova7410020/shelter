@@ -56,7 +56,7 @@ body {
     width: 100%;
     min-height: 908px;
     height: 100%;
-    margin: 0 auto;
+    margin-left: 40px;
 }
 
 .header_wrap{
@@ -141,7 +141,46 @@ h1{
     background-color: #F1CDB3;
     margin-top: 42px;
     cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 6%;
 }
 .start_button:hover{
     background-color: #FDDCC4;
+}
+.about_wrap{
+    max-width: 1200px;
+    width: 100%;
+    min-height: 588px;
+}
+.about_content{
+    margin-top: 80px;
+    display: flex;
+    flex-direction: row;
+    gap:120px;
+}
+.about_content img {
+    margin-left: 215px;
+    height: 408px;
+}
+.about_text{
+    padding-top: 14px;
+    max-width: 430px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+.about_text h3{
+    font-family: Georgia, serif;
+    font-size: 35px;
+    font-weight: 400;
+    line-height: 130%;
+    letter-spacing: 6%;
+}
+.about_text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    line-height: 160%;
 }
