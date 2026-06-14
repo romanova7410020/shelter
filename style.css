@@ -173,7 +173,7 @@ h1{
     flex-direction: column;
     gap: 25px;
 }
-.about_text h3, .pets_wrap h3, .help_wrap h3{
+.about_text h3, .pets_wrap h3, .help_wrap h3, .section_content h3{
     font-family: Georgia, serif;
     font-size: 35px;
     font-weight: 400;
@@ -327,3 +327,76 @@ h4{
     width: 60px;
     height: 60px;
 }
+.donation{
+    background-color: #F6F6F6;
+}
+.donation_wrap{
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+.donation_content{
+    padding-top: 90px;
+    padding-bottom: 100px;
+    max-width: 915px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-left: 143px;
+    gap: 30px;
+}
+.donation_content img{
+    max-width: 505px;
+    width: 100%;
+    height: 261px;
+}
+.section_content h3{
+    margin-top: -11px;
+}
+.section_content{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.section_content p{
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 110.00000000000001%;
+    letter-spacing: 6%;
+    vertical-align: middle;
+}
+.credit_card{
+    max-width: 349px;
+    width: 100%;
+    height: 43px;
+    background-color: #F1CDB3;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 9px;
+}
+.credit_card img{
+    width: 30px;
+    height: 23px;
+}
+.credit_card span{
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+    vertical-align: middle;
+}
+.section_content p:last-child{
+    font-family: Arial;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    color: #B2B2B2;
+}
+
