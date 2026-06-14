@@ -173,7 +173,9 @@ h1{
     flex-direction: column;
     gap: 25px;
 }
-.about_text h3, .pets_wrap h3, .help_wrap h3, .section_content h3{
+.about_text h3, .pets_wrap h3, .help_wrap h3, 
+.section_content h3, .contacts h3,
+.locations h3{
     font-family: Georgia, serif;
     font-size: 35px;
     font-weight: 400;
@@ -399,4 +401,56 @@ h4{
     vertical-align: middle;
     color: #B2B2B2;
 }
-
+footer {
+  background:
+    linear-gradient(0deg, #211F20, #211F20),
+    radial-gradient(110.67% 538.64% at 5.73% 50%, #513D2F 0%, #1A1A1C 100%);
+}
+.footer_wrap{
+    max-width: 1200px;
+    width: 100%;
+    height: 350px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    gap: 160px;
+}
+.contacts, .locations{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+.contacts_item, .locations_item{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    align-items: center;
+}
+.contacts h3, .locations h3{
+    margin-top: 56px;
+    color: #FFFFFF;
+}
+.contacts_item, .locations_item{
+    color: #F1CDB3;
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 114.99999999999999%;
+    letter-spacing: 6%;
+}
+.locations_item img{
+    width: 22px;
+    height: 32px;
+}
+.locations_item span:first-of-type{
+    margin-top: -5px;
+}
+.locations_item:last-of-type{
+    margin-top: -10px;
+}
+.footer_img{
+    max-width: 300px;
+    width: 100%;
+    height: 310px;
+    margin-top: 40px;
+}
