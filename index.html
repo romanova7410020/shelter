@@ -4,11 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="/image/favicon.ico" type="image/x-icon">
     <title>Shelter</title>
 </head>
 <body>
     <div class="body_wrap">
-        <section class="start_screen">
+        <div class="wrap">
+            <section class="start_screen">
             <header class="header">
                 <div class="header_wrap">
                     <div class="header_logo">
@@ -17,10 +19,10 @@
                     </div>
                     <nav class="header_nav">
                         <ul class="nav_list">
-                            <li class="nav_item"><a href="#">About the shelter</a> </li>
-                            <li class="nav_item"><a href="#">Our pets</a></li>
-                            <li class="nav_item"><a href="#">Help the shelter</a></li>
-                            <li class="nav_item"><a href="#">Contacts</a></li>
+                            <li class="nav_item"><a href="">About the shelter</a> </li>
+                            <li class="nav_item"><a href="pets.html">Our pets</a></li>
+                            <li class="nav_item"><a href="#help">Help the shelter</a></li>
+                            <li class="nav_item"><a href="#contacts">Contacts</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -29,13 +31,15 @@
                 <div class="start_content">
                     <h1>Not only people <br>need a house</h1>
                     <p class="start_content-text">We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-                    <button class="start_button">Make a friend</button>
+                    <a class="start_button" href="#pets">Make a friend</a>
                 </div>
                 <div class="start_image"></div>
             </div>
         </section>
+        </div>
+        
     </div>
-    <section class="about">
+    <section class="about" id="about">
         <div class="about_wrap">
             <div class="about_content">
                 <img src="./image/368c0662de200ad351db707bd7878caaee2f7b79.png" alt="pets">
@@ -47,7 +51,7 @@
             </div>
         </div>
     </section>
-    <section class="pets">
+    <section class="pets" id="pets">
         <div class="pets_wrap">
             <h2>Our friends who <br>are looking for a house</h2>
             <div class="pet_cards">
@@ -69,48 +73,48 @@
                 </div>
                 <img src="./image/button_arrow-r.svg" alt="arrow" class="arrow">
             </div>
-            <a href="#" class="pets_button">Get to know the rest</a>
+            <a href="pets.html" class="pets_button">Get to know the rest</a>
         </div>
     </section>
-    <section class="help">
+    <section class="help" id="help">
         <div class="help_wrap">
             <h2>How you can help <br>our shelter</h2>
             <div class="help_list">
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-pet-food.svg" alt="icon">
-                    <h4>Pet food</h4>
+                    <h3>Pet food</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-transportation.svg" alt="icon">
-                    <h4>Transportation</h4>
+                    <h3>Transportation</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-toys.svg" alt="icon">
-                    <h4>Toys</h4>
+                    <h3>Toys</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-bowls-and-cups.svg" alt="icon">
-                    <h4>Bowls and cups</h4>
+                    <h3>Bowls and cups</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-shampoos.svg" alt="icon">
-                    <h4>Shampoos</h4>
+                    <h3>Shampoos</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-vitamins.svg" alt="icon">
-                    <h4>Vitamins</h4>
+                    <h3>Vitamins</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-medicines.svg" alt="icon">
-                    <h4>Medicines</h4>
+                    <h3>Medicines</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-collars-leashes.svg" alt="icon">
-                    <h4>Collars / leashes</h4>
+                    <h3>Collars / leashes</h3>
                 </div>
                 <div class="help_item">
                     <img class="help_item-icon" src="./image/icon-sleeping-area.svg" alt="icon">
-                    <h4>Sleeping areas</h4>
+                    <h3>Sleeping areas</h3>
                 </div>
             </div>
         </div>
@@ -133,27 +137,38 @@
     </section>
     <footer>
         <div class="footer_wrap">
-            <div class="contacts">
+            <div class="contacts" id="contacts">
                 <h2>For questions<br> and suggestions</h2>
                 <div class="contacts_item">
                     <img src="./image/icon-email.svg" alt="email">
-                    <span>email@shelter.com</span>
+                    <a href="mailto:email@shelter.com">email@shelter.com</a>
                 </div>
                 <div class="contacts_item">
                     <img src="./image/icon-phone.svg" alt="email">
-                    <span>+13 674 567 75 54</span>
+                    <a href="tel:+136745677554">+13 674 567 75 54</a>
                 </div>
             </div>
             <div class="locations">
                 <h2>We are waiting <br>for your visit</h2>
-                <div class="locations_item">
-                    <img src="./image/icon-marker.png" alt="icon">
+                <a
+                    class="locations_item"
+                    href="https://www.google.com/maps/search/?api=1&query=1+Central+Street,+Boston"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img src="./image/icon-marker.png" alt="marker">
                     <span>1 Central Street, Boston <br>(entrance from the store)</span>
-                </div>
-                <div class="locations_item">
-                    <img src="./image/icon-marker.png" alt="icon">
-                    <span>18 South Park, London </span>
-                </div>
+                    </a>
+
+                    <a
+                    class="locations_item"
+                    href="https://www.google.com/maps/search/?api=1&query=18+South+Park,+London"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >
+                    <img src="./image/icon-marker.png" alt="marker">
+                    <span>18 South Park, London</span>
+                    </a>
             </div>
             <img src="./image/footer-puppy.png" alt="puppy" class="footer_img">
         </div>
