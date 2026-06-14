@@ -135,7 +135,8 @@ h1{
     margin-top: 42px;
 }
 .start_button{
-    width: 207px;
+    max-width: 207px;
+    width: 100%;
     height: 52px;
     border-radius: 100px;
     background-color: #F1CDB3;
@@ -155,7 +156,7 @@ h1{
     min-height: 588px;
 }
 .about_content{
-    margin-top: 80px;
+    padding-top: 80px;
     display: flex;
     flex-direction: row;
     gap:120px;
@@ -172,7 +173,7 @@ h1{
     flex-direction: column;
     gap: 25px;
 }
-.about_text h3{
+.about_text h3, .pets_wrap h3{
     font-family: Georgia, serif;
     font-size: 35px;
     font-weight: 400;
@@ -183,4 +184,101 @@ h1{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
     line-height: 160%;
+}
+.pets{
+    background-color: #F6F6F6;
+}
+.pets_wrap{
+    max-width: 1200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+.pets_wrap h3{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 60px;
+}
+
+.pet_cards{
+    display: flex;
+    flex-direction: row;
+}
+.pet_card{
+    max-width: 270px;
+    width: 100%;
+    height: 435px;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+    background-color: #FAFAFA;
+    align-items: center;
+
+}
+.pet_card img{
+    max-width: 270px;
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+}
+
+.pet_card + .pet_card {
+  margin-left: 90px;
+}
+
+.pet_cards > img:first-child {
+  margin-right: 53px;
+}
+
+.pet_cards > img:last-child {
+  margin-left: 53px;
+}
+
+.card_name{
+    font-family: Georgia;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 100%;
+    letter-spacing: 6%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.card_link{
+    max-width: 187px;
+    width: 100%;
+    height: 52px;
+    border-radius: 100px;
+    border: #F1CDB3 2px solid;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pet_card:hover .card_link{
+    background-color: #F1CDB3;
+}
+.pets_button{
+    max-width: 261px;
+    width: 100%;
+    height: 52px;
+    border-radius: 100px;
+    background-color: #F1CDB3;
+    cursor: pointer;
+    font-family: Georgia, serif;
+    font-size: 17px;
+    line-height: 130%;
+    letter-spacing: 6%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    margin-bottom: 100px;
+    margin-left: calc((1200px - 261px) / 2);
 }
