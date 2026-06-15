@@ -513,3 +513,6 @@ background: #FFFFFF;
     margin-top: 60px;
     margin-bottom: 100px;
 }
+.pagination img:hover{
+    cursor: pointer;
+}
